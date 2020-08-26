@@ -1,0 +1,63 @@
+.articles{
+    margin-top: 100px;
+    text-align: center;
+    @include medium{
+        text-align: left;
+    }
+    @include xlarge{
+        padding-left: 20px;
+    }
+    @include ldesktop{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    &__heading{
+        color: map-get($map: $font-color, $key: heading);
+        padding-bottom: 50px;
+        @include medium{
+            padding-left: 45px;
+        }
+    }
+    &__flex{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: $light-grey;
+        @include medium{
+            display: flex;
+            flex-direction: row;   
+         }
+        @include xlarge{
+            flex-flow: row;
+        }
+    }
+    &__box{
+        width: 20rem;
+        margin: 30px auto;
+        text-align: center;
+        @include medium{
+            // width: 45%;
+            text-align: left;
+        }
+        @include large{
+            width: 45%;
+            margin: 10px;
+        }
+        @include ldesktop{
+            // padding-left: 50px;
+        }
+        &--heading{
+           color: map-get($map: $font-color, $key: heading);     
+           font-size: 1.3rem;
+        }
+        &--text{
+            color: map-get($map: $font-color, $key: paragraph);
+            font-size: 1.2rem;
+            // @include large{
+            //     // padding-right: 50px;
+            // }
+            @include xlarge{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

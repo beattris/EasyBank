@@ -1,0 +1,83 @@
+.footer{
+    background-color: $dark-blue;
+    margin-top: 100px;
+    @include small{
+        text-align: center;
+        // margin-bottom: -15px;
+    }
+    &__main-footer{
+        @include medium{
+            display: flex;
+            padding: 40px 0px 20px 50px;
+            justify-content: space-around;
+        }
+    }
+    &__connect{
+        @include large{
+            padding-right: 80px;
+        }
+      &--social-links{
+          @include large{
+              padding-top: 40px;
+          }
+        .icons{
+            @include small{
+                margin-right: 7px;
+            }
+            @include large{
+                margin-right: 10px;
+            }
+        }
+      }
+    }
+    &__know-more{
+      &--find-out{
+          @include links;
+          color: map-get($map: $font-color, $key: paragraph);
+          display: block;
+      }
+      @include medium{
+          padding: 20px 30px 0 20px;
+      }
+      @include large{
+          padding-right: 80px;
+      }
+    }
+    &__know-more2{
+        &--find-out{
+            @include links;
+            color: map-get($map: $font-color, $key: paragraph);
+            display: block;
+        }
+        @include medium{
+            padding-top: 20px;
+        }
+        @include large{
+            padding-right: 80px;
+        }
+    }
+    &__rights{
+        @include small{
+            padding-top: 30px;
+            padding-bottom: 50px;
+            &--copy{
+              color: map-get($map: $font-color, $key: paragraph);
+              padding-top: 30px;
+            }
+        }
+        @include medium{
+            padding-top: 25px;
+            padding-left: 30px;
+            @include large{
+                padding-top: 30px;
+            }
+            &--copy{
+                color: map-get($map: $font-color, $key: paragraph);
+                padding-top: 20px;
+                @include large{
+                    padding-top: 60px;
+                }
+            }
+        }
+    }
+}

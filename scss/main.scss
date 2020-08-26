@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/typography";
+
+
+@import "./layouts/nav";
+
+@import "./components/buttons";
+@import "./components/images";
+@import "./components/intro";
+@import "./components/flexbox";
+@import "./components/articles";
+
+@import "./layouts/footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: $white;
+    font-family: $font-stack;
+}

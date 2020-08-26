@@ -1,0 +1,45 @@
+@mixin links{
+    color: $white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover{
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+@mixin container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+@mixin small {
+    @media screen and (max-width:map-get($map: $breakpoints , $key: small)){
+        @content;
+    }
+}
+
+@mixin medium {
+    @media screen and (min-width:map-get($map: $breakpoints , $key: medium)){
+        @content;
+    }
+}
+
+@mixin large {
+    @media screen and (min-width:map-get($map: $breakpoints , $key: large)){
+        @content;
+    }
+}
+
+@mixin xlarge {
+    @media screen and (min-width:map-get($map: $breakpoints , $key: xlarge)){
+        @content;
+    }
+}
+
+@mixin ldesktop {
+    @media screen and (min-width:map-get($map: $breakpoints , $key: ldesktop)){
+        @content;
+    }
+}

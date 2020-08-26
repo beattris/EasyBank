@@ -1,0 +1,193 @@
+.intro{
+    @include medium{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+.hero__info{
+    @include container;
+    &--header{
+        color: $dark-blue;
+        font-weight: 400;
+        @include large{
+            font-weight: 700;
+            padding-right: 0px;
+            font-size: map-get($map: $font-size, $key: heading);
+        }
+        @include xlarge{
+            padding-right: 200px;
+        }
+        @include ldesktop{
+            padding-right: 300px;
+        }
+    }
+    &--text{
+        color: $grayish-blue;
+        margin-bottom: 30px;
+        font-size: 18px;
+        @include small{
+            padding: 5px 20px 10px 20px;
+        }
+        @include large{
+            font-weight: 400;
+            padding-right: 0px;
+            font-size: map-get($map: $font-size, $key: nav-text);
+        }
+        @include xlarge{
+            font-size: map-get($map: $font-size, $key:text );
+            padding-right: 0px;
+        }
+        @include ldesktop{
+            padding-right: 100px;
+        }
+    }
+    @include medium{
+        margin-top: 80px;
+        text-align: left;
+        padding: 0 40px;
+    }
+    @include large{
+        margin-top: 120px;
+        text-align: left;
+        padding-right: 50px;
+        margin-left: 10px;
+    }
+    @include xlarge{
+        margin-left: 20px;
+    }
+    @include ldesktop{
+        margin-left: 50px;
+    }
+}
+
+.wrapper{
+    text-align: center;
+    @include xlarge{
+        text-align: left; 
+        margin-left: 0;
+        margin-top: -200px; 
+        padding-bottom: 200px; 
+        padding-left: 70px;
+    }
+    @include ldesktop{
+        padding-left: 6%;      
+    }
+    &__header{
+        text-align: center;
+        @include xlarge{
+            padding-top: 20px;
+            text-align: left; 
+        }
+    }
+    &__input{
+        width: 50%;
+        border: 1px solid hsl(233, 26%, 24%); 
+        border-bottom-left-radius: 10px; 
+        border-top-right-radius: 10px; 
+        background-color: #ebebeb; 
+        &:focus{
+            color:hsl(233, 26%, 24%);
+        }
+    }
+    // .inputs-wrapper{
+    //     &.success{
+    //         input{
+    //             border-color: rgb(20, 235, 20);
+    //         }
+    //         i.fa-check-circle{
+    //             color: rgb(20, 235, 20);
+    //             font-size: 20px;
+    //             margin-top: 5px;
+    //             visibility: visible;
+    //         }
+    //         i.fa-exclamation-circle{
+    //             display: none;
+    //         }
+    //     }
+    
+    //     &.error{
+    //         input{
+    //             border-color: rgb(248, 63, 63);
+    //         }
+    //         i.fa-exclamation-circle{
+    //             color: rgb(248, 63, 63);
+    //             font-size: 20px;
+    //             margin-top: 5px;
+    //             visibility: visible;
+    //         }
+    //         i.fa-check-circle{
+    //             display: none;
+    //         }
+    //         .message{
+    //             color: rgb(248, 63, 63);
+    //             font-size: 18px;
+    //             visibility: visible;
+    //         }
+    //     }
+    //     .icons,
+    //     .message{
+    //         visibility: hidden;
+    //     }
+    // }
+    .success{
+        input{
+            border-color: rgb(20, 235, 20);
+        }
+        i.fa-check-circle{
+            color: rgb(20, 235, 20);
+            font-size: 20px;
+            margin-top: 5px;
+            visibility: visible;
+        }
+        i.fa-exclamation-circle{
+            display: none;
+        }
+    }
+
+    .error{
+        input{
+            border-color: rgb(248, 63, 63);
+        }
+        i.fa-exclamation-circle{
+            color: rgb(248, 63, 63);
+            font-size: 20px;
+            margin-top: 5px;
+            visibility: visible;
+        }
+        i.fa-check-circle{
+            display: none;
+        }
+        .message{
+            color: rgb(248, 63, 63);
+            font-size: 18px;
+            visibility: visible;
+        }
+    }
+
+    .icons,
+    .message{
+        visibility: hidden;
+    }
+
+    &__button{
+        width: 100px;
+        border: 1px solid hsl(233, 26%, 24%) ;
+        border-bottom-left-radius: 7px; 
+        border-top-right-radius: 7px; 
+        background-color: #fff;
+        &:hover{
+            background-color: hsl(233, 26%, 24%);
+            color: #fff;
+        } 
+        @include small{
+            background-color:hsl(233, 26%, 24%);
+            color: #fff;
+        }
+    }
+    input[type="submit"]{
+        @include ldesktop{
+            width: 10%;
+            margin-left: 20%;
+        }
+    }
+}

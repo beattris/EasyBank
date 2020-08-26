@@ -1,0 +1,43 @@
+.navbar{
+    min-height: 80px;
+    width: 100%;
+}
+
+.nav-link{
+    @include large{
+        font-size: map-get($map: $font-size, $key: nav-text);
+    }
+    @include xlarge{
+        font-size: 1.2rem;
+    }
+}
+
+// .invite-button{
+//     margin-right: 120px;
+// }
+
+.navbar-brand{
+    @include large{
+        margin-left: 10px;
+    }
+    @include xlarge{
+        margin-left: 20px;
+    }
+    @include ldesktop{
+        margin-left: 50px;
+    }
+}
+
+.logo{
+    @include medium{
+        width: 150px;
+    }
+    @include large{
+        width: 200px;
+    }
+}
+
+
+
+
+

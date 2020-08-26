@@ -1,0 +1,32 @@
+.invite-button{
+    background-image: linear-gradient(to right,$lime-green, $bright-cyan);
+    padding: 10px 25px;
+    border-radius:25px;
+    @include links;
+    &:hover{
+        background-image: linear-gradient(to right,$bright-cyan, $lime-green);
+    }
+    @include small{
+        display: none;
+    }
+    @include medium{
+        display: none;
+    }
+    // @include large{
+    //     display: inline-block;
+    // }
+}
+
+.invite-button2{
+    background-image: linear-gradient(to right,$lime-green, $bright-cyan);
+    padding: 10px 25px;
+    border-radius:25px;
+    @include links;
+    &:hover{
+        background-image: linear-gradient(to right,$bright-cyan, $lime-green);
+    }
+    @include ldesktop{
+        padding: 12px 27px;
+        font-size: 1.2rem;
+    }
+}

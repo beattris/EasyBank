@@ -1,0 +1,98 @@
+.benefits{
+    margin-top: 100px;
+    text-align: center;
+    background-color: $light-grayish-blue;
+    @include medium{
+        text-align: left;
+    }
+    @include xlarge{
+        padding-left: 20px;
+    }
+    @include ldesktop{
+        padding-left: 50px;
+    }
+    &__info{
+        padding-top: 50px;
+        @include medium{
+            margin-top: -50px;
+        }
+        @include xlarge{
+            margin-top: -220px;
+        }
+    }
+    &__heading{
+        color: map-get($map: $font-color, $key: heading);
+        @include small{
+            padding: 0 100px;
+        }
+        @include medium{
+            padding-left: 45px;
+        }
+    }
+    &__para{
+        color: map-get($map: $font-color, $key: paragraph);    
+        padding: 10px 30px;
+        font-size: 1.2rem;
+        @include medium{
+            padding: 10px 100px 10px 45px;   
+        }
+        @include large{
+            padding-right: 400px;
+        }
+        @include xlarge{
+            padding-right: 600px;
+            font-size: 1.2rem;
+        }
+        @include ldesktop{
+            padding-right: 700px;
+        }
+    }
+    &__flex{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        @include medium{
+            display: flex;
+            flex-direction: row;       
+         }
+        @include xlarge{
+            flex-flow: row;
+        }
+    }
+    &__box{
+        @include small{
+            padding: 30px 40px;
+        }
+        @include medium{
+            width: 20rem;
+            padding-left: 30px;
+            padding-right: 10px;
+        }
+        @include large{
+            width: 50%;
+        }
+        @include ldesktop{
+            padding-left: 50px;
+        }
+        &--img{
+            width: 50%;
+            padding-bottom: 15px;
+            @include medium{
+                width: 100px;
+            }
+        }
+        &--heading{
+           color: map-get($map: $font-color, $key: heading);     
+           font-size: 1.5rem;
+        }
+        &--text{
+            color: map-get($map: $font-color, $key: paragraph);
+            font-size: 1.2rem;
+            @include large{
+                padding-right: 50px;
+            }
+            @include xlarge{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
