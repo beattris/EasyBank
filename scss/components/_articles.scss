@@ -34,16 +34,19 @@
         width: 20rem;
         margin: 30px auto;
         text-align: center;
+        transition: all 0.5s ease-in;
+        &:hover{
+            box-shadow: 3px 3px 5px 6px #ccc;
+            opacity: 2;
+            // box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        }
         @include medium{
-            // width: 45%;
+            opacity: 0.7;
             text-align: left;
         }
         @include large{
             width: 45%;
             margin: 10px;
-        }
-        @include ldesktop{
-            // padding-left: 50px;
         }
         &--heading{
            color: map-get($map: $font-color, $key: heading);     
@@ -52,9 +55,6 @@
         &--text{
             color: map-get($map: $font-color, $key: paragraph);
             font-size: 1.2rem;
-            // @include large{
-            //     // padding-right: 50px;
-            // }
             @include xlarge{
                 font-size: 1.2rem;
             }
