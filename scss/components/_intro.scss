@@ -89,46 +89,7 @@
             color:hsl(233, 26%, 24%);
         }
     }
-    // .inputs-wrapper{
-    //     &.success{
-    //         input{
-    //             border-color: rgb(20, 235, 20);
-    //         }
-    //         i.fa-check-circle{
-    //             color: rgb(20, 235, 20);
-    //             font-size: 20px;
-    //             margin-top: 5px;
-    //             visibility: visible;
-    //         }
-    //         i.fa-exclamation-circle{
-    //             display: none;
-    //         }
-    //     }
     
-    //     &.error{
-    //         input{
-    //             border-color: rgb(248, 63, 63);
-    //         }
-    //         i.fa-exclamation-circle{
-    //             color: rgb(248, 63, 63);
-    //             font-size: 20px;
-    //             margin-top: 5px;
-    //             visibility: visible;
-    //         }
-    //         i.fa-check-circle{
-    //             display: none;
-    //         }
-    //         .message{
-    //             color: rgb(248, 63, 63);
-    //             font-size: 18px;
-    //             visibility: visible;
-    //         }
-    //     }
-    //     .icons,
-    //     .message{
-    //         visibility: hidden;
-    //     }
-    // }
     .success{
         input{
             border-color: rgb(20, 235, 20);
